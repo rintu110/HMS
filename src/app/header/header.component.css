@@ -1,0 +1,52 @@
+.header_top {
+    background: #000000b5 !important;
+}
+
+.bd-bt1{
+    border-bottom: 0px solid #bdbdbd;
+}
+
+.offcanvas-header .header_logo{
+    padding:0 15px;
+    width: 100%;
+}
+
+.offcanvas-header .btn-close {
+    margin-right: 15px;
+    margin-top: -50px;
+    font-size: 20px;
+}
+
+.offcanvas-body.mobile_menu .header_menu .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.offcanvas-body.mobile_menu .header_menu .menu > li {
+    position: relative;
+    border-bottom: 1px solid #838383;
+}
+
+.offcanvas-body.mobile_menu .header_menu .menu > li.current-menu-item > a {
+    background-color: #e1bd85;
+    color: #fff;
+}
+.offcanvas-body.mobile_menu .header_menu .menu > li:hover > a {
+    background-color: #e1bd85;
+    color: #fff;
+}
+
+.offcanvas-body.mobile_menu .header_menu .menu > li > a {
+    display: block;
+    padding: 0 15px;
+    line-height: 45px;
+    color: #232323;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size:15px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}

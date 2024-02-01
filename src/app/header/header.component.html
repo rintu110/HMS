@@ -1,0 +1,140 @@
+<!-- HEADER -->
+<header id="header">
+            
+    <!-- HEADER TOP -->
+    <div class="header_top">
+        <div class="container">
+            <div class="header_left float-left">
+                <span><i class="lotus-icon-cloud"></i> 18 °C</span>
+                <span><i class="lotus-icon-location"></i> 225 Beach Street, Australian</span>
+                <span><i class="lotus-icon-phone"></i> 1-548-854-8898</span>
+            </div>
+            <div class="header_right float-right">
+
+                <span class="login-register">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">register</a>
+                </span>
+
+                <div class="dropdown currency">
+                    <span>USD <i class="fa fa"></i></span>
+                    <ul>
+                        <li class="active"><a href="#">USD</a></li>
+                        <li><a href="#">EUR</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown language">
+                    <span>ENG</span>
+
+                    <ul>
+                        <li class="active"><a href="#">ENG</a></li>
+                        <li><a href="#">FR</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END / HEADER TOP -->
+    
+    <!-- HEADER LOGO & MENU -->
+    <div class="header_content" id="header_content">
+
+        <div class="container">
+            <!-- HEADER LOGO -->
+            <div class="header_logo">
+                <a href="#"><img src="../../../assets/images/logo-header.png" alt=""></a>
+            </div>
+            <!-- END / HEADER LOGO -->
+            
+            <!-- HEADER MENU -->
+            <nav class="header_menu">
+                <ul class="menu">
+                    <li class="current-menu-item">
+                        <a href="index.html">Home </a>
+                        
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    
+                    <li>
+                        <a href="#">Rooms</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">Restaurant </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">Reservation</a>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="#">Gallery</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">Blog </a>
+                       
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- END / HEADER MENU -->
+
+            <!-- MENU BAR -->
+            <span class="menu-bars"  (click)="open(content)">
+                <i class='fa fa-navicon'></i>
+            </span>
+            <!-- END / MENU BAR -->
+
+        </div>
+    </div>
+    <!-- END / HEADER LOGO & MENU -->
+
+</header>
+<!-- END / HEADER -->
+
+<ng-template #content let-offcanvas>
+	<div class="offcanvas-header">
+        <div class="header_logo bd-bt1">
+            <a href="#"><img src="../../../assets/images/logo-header.png" alt=""></a>
+        </div>
+		<button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+	</div>
+	<div class="offcanvas-body mobile_menu">
+		<div class="header_menu">
+            <ul class="menu">
+                <li class="current-menu-item">
+                    <a href="index.html">Home </a>
+                    
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                
+                <li>
+                    <a href="#">Rooms</a>
+                    
+                </li>
+                <li>
+                    <a href="#">Restaurant </a>
+                    
+                </li>
+                <li>
+                    <a href="#">Reservation</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="#">Gallery</a>
+                    
+                </li>
+                <li>
+                    <a href="#">Blog </a>
+                   
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+	</div>
+</ng-template>
